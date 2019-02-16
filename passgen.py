@@ -9,7 +9,7 @@ numberOfPasswords = int(input("Number of passwords: "))
 
 with open('4000-most-common-english-words-csv.csv') as file:
     passwords = file.read().split("\n")
-    passwords = passwords[1:len(passwords)-2]
+    passwords = passwords[1:len(passwords)-1]
 
 def randomUpper(s):
     upper = False
